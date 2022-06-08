@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	color: rgb(0, 0, 0);
+	font-family: Roboto, Helvetica, sans-serif;
+	background-color: rgb(242, 242, 242);
+}
+
+#parent {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#canvas {
+	background-color: white;
+	display: grid;
+	grid-template:
+		". . . x"
+		". q q ."
+		"n . . y";
+	justify-content: center;
+	border-radius: 20px;
+	width: 60%;
+	height: auto;
+	text-align: center;
+	box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+#question {
+	color: black;
+	background-color: white;
+	font-size: 2em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	grid-area: q;
+}
+
+#exit,
+#reload {
+	box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-area: x;
+	height: 2.5em;
+	width: 2.5em;
+	margin-top: 1.5em;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+#reload {
+	box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-area: x;
+	height: 2.5em;
+	margin-top: 1.5em;
+	border-radius: 10%;
+}
+
+#reload ion-icon {
+	background-color: rgb(255, 0, 0);
+	font-size: 1.5em;
+	grid-area: x;
+}
+
+#exit:hover,
+#reload:hover,
+#reload:hover ion-icon {
+	background-color: rgb(160, 0, 0);
+	transition: 100ms;
+}
+
+.buttons {
+	color: black;
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10%;
+	cursor: pointer;
+	margin-bottom: 3em;
+}
+
+.buttons:hover {
+	background-color: rgb(242, 242, 242);
+	transition: 100ms;
+}
+
+#yes {
+	grid-area: y;
+}
+
+#no {
+	grid-area: n;
+}
+
+iframe {
+	margin-top: 2em;
+	grid-area: q;
+	margin-bottom: 3em;
+	border-radius: 10px;
+}

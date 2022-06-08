@@ -1,0 +1,51 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Are you gay?</title>
+	</head>
+	<body>
+		<div id="parent">
+			<div id="canvas">
+				<div
+					id="exit"
+					onmouseenter="this.innerHTML='Yes'"
+					onmouseleave="this.innerHTML='X'"
+					onclick="gay()"
+				>
+					X
+				</div>
+				<h1 id="question">Are you gay?</h1>
+				<div
+					id="yes"
+					class="buttons"
+					onmouseleave="this.innerHTML='Yes'"
+					onmouseenter="sus()"
+					onclick="gay()"
+				>
+					Yes
+				</div>
+				<div
+					id="no"
+					class="buttons"
+					onmouseenter="this.innerHTML='Yes'"
+					onmouseleave="this.innerHTML='No'"
+					onclick="gay()"
+				>
+					No
+				</div>
+			</div>
+		</div>
+		<script src="./main.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
